@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" total="20" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="249396" started-at="2016-07-31T21:49:17Z" finished-at="2016-07-31T21:53:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="249396" started-at="2016-07-31T21:49:17Z" finished-at="2016-07-31T21:53:27Z">
+      <class name="AutomateForm.FormAutomate">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="openBrowser" is-config="true" duration-ms="18040" started-at="2016-08-01T03:19:17Z" finished-at="2016-08-01T03:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6670" started-at="2016-08-01T03:19:35Z" finished-at="2016-08-01T03:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="alertJava()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="alertJava" duration-ms="568" started-at="2016-08-01T03:19:42Z" finished-at="2016-08-01T03:19:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertJava -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="9095" started-at="2016-08-01T03:19:43Z" finished-at="2016-08-01T03:19:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="browser()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="browser" duration-ms="17496" started-at="2016-08-01T03:19:52Z" finished-at="2016-08-01T03:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6061" started-at="2016-08-01T03:20:09Z" finished-at="2016-08-01T03:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="changeColorButton()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="changeColorButton" duration-ms="78" started-at="2016-08-01T03:20:15Z" finished-at="2016-08-01T03:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeColorButton -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6079" started-at="2016-08-01T03:20:15Z" finished-at="2016-08-01T03:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="changeColorButtonOnDoubleClick()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="changeColorButtonOnDoubleClick" duration-ms="527" started-at="2016-08-01T03:20:22Z" finished-at="2016-08-01T03:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeColorButtonOnDoubleClick -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="5860" started-at="2016-08-01T03:20:22Z" finished-at="2016-08-01T03:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="checkBox()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="checkBox" duration-ms="558" started-at="2016-08-01T03:20:28Z" finished-at="2016-08-01T03:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBox -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6625" started-at="2016-08-01T03:20:28Z" finished-at="2016-08-01T03:20:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="clockTimer()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clockTimer" duration-ms="104" started-at="2016-08-01T03:20:35Z" finished-at="2016-08-01T03:20:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clockTimer -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7032" started-at="2016-08-01T03:20:35Z" finished-at="2016-08-01T03:20:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="FAIL" signature="datePicker()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="datePicker" duration-ms="10964" started-at="2016-08-01T03:20:42Z" finished-at="2016-08-01T03:20:53Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at AutomateForm.FormAutomate.datePicker(FormAutomate.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePicker -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7092" started-at="2016-08-01T03:20:53Z" finished-at="2016-08-01T03:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="dragAndDrop" duration-ms="761" started-at="2016-08-01T03:21:00Z" finished-at="2016-08-01T03:21:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6705" started-at="2016-08-01T03:21:01Z" finished-at="2016-08-01T03:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="dropdownSelect()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="dropdownSelect" duration-ms="462" started-at="2016-08-01T03:21:08Z" finished-at="2016-08-01T03:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownSelect -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7034" started-at="2016-08-01T03:21:08Z" finished-at="2016-08-01T03:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="radioButton()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="radioButton" duration-ms="343" started-at="2016-08-01T03:21:15Z" finished-at="2016-08-01T03:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioButton -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6856" started-at="2016-08-01T03:21:16Z" finished-at="2016-08-01T03:21:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="textArea()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="textArea" duration-ms="787" started-at="2016-08-01T03:21:22Z" finished-at="2016-08-01T03:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textArea -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7618" started-at="2016-08-01T03:21:23Z" finished-at="2016-08-01T03:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="textBox()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="textBox" duration-ms="630" started-at="2016-08-01T03:21:31Z" finished-at="2016-08-01T03:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBox -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="8583" started-at="2016-08-01T03:21:32Z" finished-at="2016-08-01T03:21:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="timingAlertJava()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="timingAlertJava" duration-ms="432" started-at="2016-08-01T03:21:40Z" finished-at="2016-08-01T03:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timingAlertJava -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="6692" started-at="2016-08-01T03:21:41Z" finished-at="2016-08-01T03:21:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="urlText()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="urlText" duration-ms="379" started-at="2016-08-01T03:21:47Z" finished-at="2016-08-01T03:21:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlText -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="8140" started-at="2016-08-01T03:21:48Z" finished-at="2016-08-01T03:21:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="verificationTextAndSubmit(java.lang.String)[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verificationTextAndSubmit" duration-ms="8682" started-at="2016-08-01T03:21:56Z" data-provider="getData" finished-at="2016-08-01T03:22:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationTextAndSubmit -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="5910" started-at="2016-08-01T03:22:04Z" finished-at="2016-08-01T03:22:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="FAIL" signature="verificationTextAndSubmit(java.lang.String)[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verificationTextAndSubmit" duration-ms="10861" started-at="2016-08-01T03:22:10Z" data-provider="getData" finished-at="2016-08-01T03:22:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tt]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at AutomateForm.FormAutomate.verificationTextAndSubmit(FormAutomate.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationTextAndSubmit -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7082" started-at="2016-08-01T03:22:21Z" finished-at="2016-08-01T03:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="FAIL" signature="verificationTextAndSubmit(java.lang.String)[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verificationTextAndSubmit" duration-ms="10815" started-at="2016-08-01T03:22:28Z" data-provider="getData" finished-at="2016-08-01T03:22:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[text]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at AutomateForm.FormAutomate.verificationTextAndSubmit(FormAutomate.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationTextAndSubmit -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7891" started-at="2016-08-01T03:22:39Z" finished-at="2016-08-01T03:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="FAIL" signature="verificationTextAndSubmit(java.lang.String)[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verificationTextAndSubmit" duration-ms="10953" started-at="2016-08-01T03:22:47Z" data-provider="getData" finished-at="2016-08-01T03:22:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1+]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at AutomateForm.FormAutomate.verificationTextAndSubmit(FormAutomate.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationTextAndSubmit -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="10608" started-at="2016-08-01T03:22:58Z" finished-at="2016-08-01T03:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="FAIL" signature="verificationTextAndSubmit(java.lang.String)[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verificationTextAndSubmit" duration-ms="10990" started-at="2016-08-01T03:23:09Z" data-provider="getData" finished-at="2016-08-01T03:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b38b2592-d517-4c2d-85d8-b8bbec9714da
+*** Element info: {Using=css selector, value=#form_success}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at AutomateForm.FormAutomate.verificationTextAndSubmit(FormAutomate.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#form_success"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous4266607231777921325webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationTextAndSubmit -->
+        <test-method status="PASS" signature="clearData()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="clearData" is-config="true" duration-ms="7176" started-at="2016-08-01T03:23:20Z" finished-at="2016-08-01T03:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearData -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="verifyTitle" duration-ms="93" started-at="2016-08-01T03:23:27Z" finished-at="2016-08-01T03:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutomateForm.FormAutomate@1832929]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2016-08-01T03:23:27Z" finished-at="2016-08-01T03:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- AutomateForm.FormAutomate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
