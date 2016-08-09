@@ -1,24 +1,21 @@
 package AutomateForm;
 
+//************************************************************************//
+//Testcase 1. Finding all the links on the page.
+//	- All the links are in image <img /> and anchor tags <a/> on a web page. 
+//	- All links are mentioned as href attribute of the element tag.
+//	- Filter out elements that don’t have href attributes.
+
+//Testcase 2. Iteratively checking the links if they are broken.
+//	- Use  HttpURLConnection Java class. 
+//	This class is used to  make HTTP requests to the webserver hosting the links.
+//************************************************************************//
+
 import java.io.File;
-
-/*
-Testcase 1. Finding all the links on the page.
-	- All the links are in image <img /> and anchor tags <a/> on a web page. 
-	- All links are mentioned as href attribute of the element tag.
-	- Filter out elements that don’t have href attributes.
-
-Testcase 2. Iteratively checking the links if they are broken.
-	- Use  HttpURLConnection Java class. This class is used to  make HTTP requests to the webserver hosting the links.
-   
- */
-
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +23,7 @@ import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -48,8 +46,7 @@ public class ValidteLinks<isLinkBroken> {
 				//Step 1. Launch Firefox Browser
 				driver = new FirefoxDriver(ffBinary, ffProfile);
 								
-				driver.manage().window().maximize();	
-				driver.manage().timeouts().implicitlyWait(Util.WAIT_TIME, TimeUnit.SECONDS);
+				driver.manage().window().maximize();				
 				
 				// Step 2. Goto the url: http://www.seleniumframework.com/Practiceform/
 				driver.get(Util.BASE_URL);
@@ -136,5 +133,11 @@ public class ValidteLinks<isLinkBroken> {
 		    }		
 		
 		return data;
-		} 
+		}
+	  
+	  @AfterTest
+	  public void closeBrowser()
+	  {
+		  driver.quit();
+	  }
  	}

@@ -1,7 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Automation Suite">
 	<test name="Regression">
-		<classes>
+		<classes>			
+			<class name="AutomateForm.FormAutomate"></class>
 			<class name="AutomateForm.ValidteLinks"></class>
 		</classes>
 	</test>
