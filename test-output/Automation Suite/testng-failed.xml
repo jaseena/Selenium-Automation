@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]">
   <test name="Regression">
     <classes>
-      <class name="AutomateForm.ValidteLinks"/>
       <class name="AutomateForm.FormAutomate"/>
+      <class name="AutomateForm.ValidteLinks"/>
     </classes>
   </test> <!-- Regression -->
-  <test name="Regression(failed)" parallel="methods">
+  <test name="Regression(failed)">
     <classes>
-      <class name="AutomateForm.FormAutomate">
-        <methods>
-          <include name="dragAndDrop"/>
-          <include name="alertJava"/>
-          <include name="verificationTextAndSubmit" invocation-numbers="1 2 3 4"/>
-          <include name="clockTimer"/>
-          <include name="timingAlertJava"/>
-          <include name="datePicker"/>
-          <include name="urlText"/>
-          <include name="periodicElements"/>
-          <include name="textBox"/>
-          <include name="closeBrowser"/>
-          <include name="dropdownSelect"/>
-          <include name="textArea"/>
-          <include name="verifyTitle"/>
-          <include name="openBrowser"/>
-          <include name="checkBox"/>
-          <include name="changeColorButtonOnDoubleClick"/>
-          <include name="browser"/>
-          <include name="radioButton"/>
-          <include name="goToUrl"/>
-          <include name="changeColorButton"/>
-        </methods>
-      </class> <!-- AutomateForm.FormAutomate -->
       <class name="AutomateForm.ValidteLinks">
         <methods>
           <include name="openBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- AutomateForm.ValidteLinks -->
+      <class name="AutomateForm.FormAutomate">
+        <methods>
+          <include name="verificationTextAndSubmitError" invocation-numbers="0 1 2 3 4"/>
+          <include name="openBrowser"/>
+          <include name="verificationTextAndSubmitSuccess"/>
+          <include name="datePicker"/>
+          <include name="newMessageWindow"/>
+          <include name="goToUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- AutomateForm.FormAutomate -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->

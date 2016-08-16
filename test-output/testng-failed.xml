@@ -10,12 +10,9 @@
     <classes>
       <class name="AutomateForm.FormAutomate">
         <methods>
-          <include name="verificationTextAndSubmitError" invocation-numbers="0 1 2 3 4"/>
+          <include name="clockTimer"/>
           <include name="openBrowser"/>
-          <include name="verificationTextAndSubmitSuccess"/>
           <include name="datePicker"/>
-          <include name="newMessageWindow"/>
-          <include name="periodicElements"/>
           <include name="goToUrl"/>
           <include name="closeBrowser"/>
         </methods>

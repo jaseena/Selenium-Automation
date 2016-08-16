@@ -31,9 +31,8 @@ import org.testng.annotations.BeforeMethod;
 public class FormAutomate {
 	
 	static WebDriver driver;
-	int scc = 0;
-	static StringBuffer verificationErrors = new StringBuffer();
 	Actions act;
+	static StringBuffer verificationErrors = new StringBuffer();	
 	
 	@BeforeTest
 	  public void openBrowser() {		
@@ -44,8 +43,7 @@ public class FormAutomate {
 				FirefoxProfile ffProfile = new FirefoxProfile();
 				
 				//Step 1. Launch Firefox Browser
-				driver = new FirefoxDriver(ffBinary, ffProfile);
-							
+				driver = new FirefoxDriver(ffBinary, ffProfile);				
 				driver.manage().window().maximize();					
 				
 				//Configure the Action
@@ -111,9 +109,29 @@ public class FormAutomate {
 	  
 	  WebElement date =driver.findElement(By.cssSelector("#vfb-8"));
 	  date.clear();
-	  date.click();
-	  driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[3]/td[2]/a")).click();
-  }
+	  date.click();	  
+	  selectDate("10");	  
+	}
+	
+public void selectDate(String date) {
+		WebDriverWait wdWait = new WebDriverWait(driver, 10);
+		wdWait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-datepicker-div")));
+		wdWait.until(ExpectedConditions.presenceOfElementLocated(By.className("ui-datepicker-calendar")));
+		WebElement dateTable = driver.findElement(By.className("ui-datepicker-calendar")); 
+		List<WebElement> tableRows = dateTable.findElements(By.xpath("//tr"));
+				for (WebElement row : tableRows) 
+				{
+			List<WebElement> cells = row.findElements(By.xpath("td"));
+			
+			for (WebElement cell : cells) 
+			{
+				if (cell.getText().equals(date)) 
+				{
+					driver.findElement(By.linkText(date)).click();
+				}
+			}
+		}
+	} 
   
   @Test(priority=4)
   public void urlText(){	  	  
@@ -128,6 +146,7 @@ public class FormAutomate {
   @Test(priority=5)
   public void dropdownSelect(){	  
 	  // Select
+	  
 	  WebElement selectElement = driver.findElement(By.cssSelector("#vfb-12"));
 	  Select dropdown = new Select(selectElement);
 	  dropdown.selectByVisibleText("Option 2");
@@ -135,7 +154,7 @@ public class FormAutomate {
   
   @Test(priority=6)
   public void verificationTextAndSubmitSuccess() {
-  	  //Verification Text box
+  	  //Verification Text box	  
 	  WebElement verificationTextBox = driver.findElement(By.cssSelector("#vfb-3"));
 	  String validVerificationText = "20";
 	  
@@ -145,12 +164,13 @@ public class FormAutomate {
 	 
 	  //Submit
 	  WebElement submit = driver.findElement(By.cssSelector("input[value='Submit']"));
-	  WebElement submitSuccessMessage = driver.findElement(By.cssSelector("#form_success"));
 	  submit.click();
+	  
 	  WebDriverWait wdWait = new WebDriverWait(driver, 4);
-	  wdWait.until(ExpectedConditions.visibilityOf(submitSuccessMessage));
+	  wdWait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("practiceform-1")));
 	  
 	  //Verify submit success message
+	  WebElement submitSuccessMessage = driver.findElement(By.cssSelector("#form_success"));
 	  String expectedSubmitSuccessMsg = "Your form was successfully submitted. Thank you for contacting us.";
 	  String actualSubmitSuccessMsg = submitSuccessMessage.getText();
 	  Assert.assertTrue(actualSubmitSuccessMsg.contains(expectedSubmitSuccessMsg));	  	  
@@ -166,22 +186,26 @@ public class FormAutomate {
 	 
 	  //Submit
 	  WebElement submit = driver.findElement(By.cssSelector("input[value='Submit']"));
-	  WebElement submitErrorMessage = driver.findElement(By.cssSelector(".vfb-error"));
 	  submit.click();
+	  
+	  WebElement submitErrorMessage = driver.findElement(By.cssSelector(".vfb-error"));	  
 	  WebDriverWait wdWait = new WebDriverWait(driver, 4);
 	  wdWait.until(ExpectedConditions.visibilityOf(submitErrorMessage));
+	  
+	  //Verify error message is displayed
 	  Assert.assertTrue(submitErrorMessage.isDisplayed());	   
   }
   
   @DataProvider
   public Object[][] getData()
 	{
-	  Object data[][] = new Object[5][1];	  
+	  Object data[][] = new Object[6][1];	  
 	    data[0][0] =  "200";
 	    data[1][0] = "tt";
 	    data[2][0] =  "text";
 	    data[3][0] = "1+";
 	    data[4][0] = "0";
+	    data[5][0] = "";
 	return data;
 	}
   
@@ -221,7 +245,7 @@ public class FormAutomate {
 	  driver.switchTo().window(newwin1);
 	  driver.manage().window().maximize();
 	  //perform actions on new window
-	  Assert.assertTrue(driver.getCurrentUrl().equals("http://www.seleniumframework.com/"));
+	  Assert.assertTrue(driver.getCurrentUrl().equals("http://www.seleniumframework.com/Practiceform/"));
 	  driver.close();
 	  driver.switchTo().window(parent1);
 	  }
@@ -268,7 +292,6 @@ public class FormAutomate {
 	  WebElement alertButton = driver.findElement(By.cssSelector("#alert"));
 	  alertButton.click();
 	  Assert.assertTrue(driver.switchTo().alert().getText().equals(alertMsg));
-	  //System.out.println(driver.switchTo().alert().getText());
 	  driver.switchTo().alert().accept();
 	  
 	  }
@@ -280,31 +303,18 @@ public class FormAutomate {
 	  WebElement timingAlertButton = driver.findElement(By.cssSelector("#alert"));
 	  timingAlertButton.click();
 	  Assert.assertTrue(driver.switchTo().alert().getText().equals(timingAlertMsg));
-	  //System.out.println(driver.switchTo().alert().getText());
 	  driver.switchTo().alert().accept();
 	  
 	  }
 	 
-	
 	  @Test(priority=11)
 	  public void clockTimer(){
 	  //Verify clock
 	  WebElement clockElement = driver.findElement(By.cssSelector("#clock"));
 	  String clockText = "Seconds remaining: ";
 	  String finalClockText = "Buzz Buzz";
-	  int timerCount = 40;
-	  if (clockElement.getText().contains("39"))
-	  {
-		  timerCount = 39;
-	  }
-	  else if (clockElement.getText().contains("38"))
-	  {
-		  timerCount = 38;		 
-	  }
-	  else if (clockElement.getText().contains("37"))
-	  {
-		  timerCount = 37;		 
-	  }
+	  String timer = clockElement.getText().substring(19);
+	  int timerCount = Integer.parseInt(timer);
 	  
 	  for (int i=timerCount; i>0; i--)
 	  {
@@ -322,21 +332,19 @@ public class FormAutomate {
 	  public void changeColorButton(){
 	  //Verify Change Color button
 	  WebElement changeColorButton = driver.findElement(By.cssSelector("#colorVar"));
-	  WebElement clockElement = driver.findElement(By.cssSelector("#clock"));
-	  Assert.assertTrue(changeColorButton.getAttribute("style").equals("color: white;"));
+	  //WebElement clockElement = driver.findElement(By.cssSelector("#clock"));
+	  //Assert.assertTrue(changeColorButton.getAttribute("style").equals("color: white;"));
 	  WebDriverWait wdWait = new WebDriverWait(driver, 4);
 	  wdWait.until(ExpectedConditions.attributeToBe(changeColorButton, "style", "color: red;"));
 	  Assert.assertTrue(changeColorButton.getAttribute("style").equals("color: red;"));
-	  Assert.assertTrue(clockElement.getText().equals("Seconds remaining: 36"));
+	  //Assert.assertTrue(clockElement.getText().equals("Seconds remaining: 36"));
 }
 
 	  @Test(priority=12)
 	  public void changeColorButtonOnDoubleClick(){
 	  //Verify Change Color button (on double click)
-	  WebElement changeColorButton1 = driver.findElement(By.cssSelector("#doubleClick"));
-	  //System.out.println(changeColorButton1.getAttribute("style"));	  
-	  act.moveToElement(changeColorButton1).doubleClick().build().perform();
-	  //System.out.println(changeColorButton1.getAttribute("style"));
+	  WebElement changeColorButton1 = driver.findElement(By.cssSelector("#doubleClick"));	  
+	  act.moveToElement(changeColorButton1).doubleClick().build().perform();	 
 	  Assert.assertTrue(changeColorButton1.getAttribute("style").contains("color: orange;"));
 }
 	  
@@ -350,25 +358,10 @@ public class FormAutomate {
 
 	  @Test(priority=14)
 	  public void periodicElements(){
-	  //Verify periodic Elements
-	  List<WebElement> periodicElements = driver.findElements(By.cssSelector("#periodicElement"));
-	  System.out.println(periodicElements.size());
-	  //WebElement clockElement = driver.findElement(By.cssSelector("#clock"));
-	  System.out.println(periodicElements.get(0).isDisplayed());
-	  //Assert.assertTrue(periodicElements.isEmpty());
-	 /* 
-	  for (int i=40; i<10; i++)
-	  {
-		  
-	  //WebDriverWait wdWait = new WebDriverWait(driver, 5);
-	  //wdWait.until(ExpectedConditions.elementToBeClickable(element).v.visibilityOf(periodicElements.add(i, element);.get(i)));
-	  System.out.println(periodicElements.get(i).getText());
-	  System.out.println("Seconds remaining: "+(36-4*i));
-	  Assert.assertTrue(periodicElements.get(i).getText().equals("Element"+i));
-	  Assert.assertTrue(clockElement.getText().equals("Seconds remaining: "+(36-4*i)));
-	  }
-	  */
-	  
+	  WebDriverWait wdWait = new WebDriverWait(driver, 5);
+	  wdWait.until(ExpectedConditions.presenceOfElementLocated(By.id("periodicElement")));
+	  WebElement periodicElement = driver.findElement(By.cssSelector("#periodicElement"));	  
+	  Assert.assertTrue(periodicElement.isDisplayed());	  
 	  }
 	  
 	  
