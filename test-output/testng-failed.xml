@@ -3,20 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="AutomateForm.FormAutomate"/>
+      <class name="AutomateForm.ValidateAllLinks"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="AutomateForm.FormAutomate">
-        <methods>
-          <include name="clockTimer"/>
-          <include name="openBrowser"/>
-          <include name="datePicker"/>
-          <include name="goToUrl"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- AutomateForm.FormAutomate -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

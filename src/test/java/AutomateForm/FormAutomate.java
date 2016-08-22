@@ -14,7 +14,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxBinary;
@@ -67,9 +66,15 @@ public class FormAutomate {
 	  WebElement textArea = driver.findElement(By.cssSelector("#vfb-10"));
 	  String text1 = "Hi seleniumframework user. This is textarea!!!";
 	  
-	  act.moveToElement(textArea).click()
-	  		.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
-	  textArea.sendKeys(text1);
+	  clearAndEnterText(textArea, text1);	  
+  }
+  
+  public void clearAndEnterText(WebElement textElement, String textData)
+  {
+	  textElement.clear();
+	  //act.moveToElement(textElement).click()
+		//.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
+	  textElement.sendKeys(textData);  
   }
   
   @Test(priority=0)
@@ -79,9 +84,7 @@ public class FormAutomate {
 	  WebElement textBox = driver.findElement(By.cssSelector("#vfb-9"));
 	  String text2 = "Hi seleniumframework user. This is textbox!!!";
 	  
-	  act.moveToElement(textBox).click()
-	  		.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
-	  textBox.sendKeys(text2);
+	  clearAndEnterText(textBox, text2);
   }
   
   @Test(priority=1)
@@ -139,8 +142,9 @@ public void selectDate(String date) {
 	  
 	  WebElement url = driver.findElement(By.cssSelector("#vfb-11"));
 	  String urlText = "http://www.seleniumframework.com/Practiceform/";
-	  url.clear();
-	  url.sendKeys(urlText);
+	  //url.clear();
+	  //url.sendKeys(urlText);
+	  clearAndEnterText(url, urlText);
   }
   
   @Test(priority=5)
@@ -158,9 +162,10 @@ public void selectDate(String date) {
 	  WebElement verificationTextBox = driver.findElement(By.cssSelector("#vfb-3"));
 	  String validVerificationText = "20";
 	  
-	  act.moveToElement(verificationTextBox).click()
-	  		.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
-	  verificationTextBox.sendKeys(validVerificationText);
+	  clearAndEnterText(verificationTextBox, validVerificationText);
+	  //act.moveToElement(verificationTextBox).click()
+	  	//	.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
+	  //verificationTextBox.sendKeys(validVerificationText);
 	 
 	  //Submit
 	  WebElement submit = driver.findElement(By.cssSelector("input[value='Submit']"));
@@ -180,9 +185,12 @@ public void selectDate(String date) {
   public void verificationTextAndSubmitError(String verificationText) {
   	  //Verification Text box
 	  WebElement verificationTextBox = driver.findElement(By.cssSelector("#vfb-3"));
-	  act.moveToElement(verificationTextBox).click()
-	  		.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
-	  verificationTextBox.sendKeys(verificationText);
+	  
+	  clearAndEnterText(verificationTextBox, verificationText);
+	  
+	  //act.moveToElement(verificationTextBox).click()
+	  	//	.keyDown(Keys.CONTROL).sendKeys("a").build().perform();
+	  //verificationTextBox.sendKeys(verificationText);
 	 
 	  //Submit
 	  WebElement submit = driver.findElement(By.cssSelector("input[value='Submit']"));
@@ -216,10 +224,11 @@ public void selectDate(String date) {
 	  //Get all the window handles in a set
 	  Set <String> handles =driver.getWindowHandles();
 	  Iterator<String> it = handles.iterator();
+	  String parent = it.next();
 	  //iterate through your windows
 	  while (it.hasNext())
 	  {
-	  String parent = it.next();
+	  //String parent = it.next();
 	  String newwin = it.next();
 	  driver.switchTo().window(newwin);
 	  driver.manage().window().maximize();
@@ -237,10 +246,11 @@ public void selectDate(String date) {
 	  //Get all the window handles in a set
 	  Set <String> handles1 =driver.getWindowHandles();
 	  Iterator<String> it1 = handles1.iterator();
+	  String parent1 = it1.next();
 	  //iterate through your windows
 	  while (it1.hasNext())
 	  {
-	  String parent1 = it1.next();
+	  //String parent1 = it1.next();
 	  String newwin1 = it1.next();
 	  driver.switchTo().window(newwin1);
 	  driver.manage().window().maximize();
@@ -258,10 +268,11 @@ public void selectDate(String date) {
 	  //Get all the window handles in a set
 	  Set <String> handles11 =driver.getWindowHandles();
 	  Iterator<String> it11 = handles11.iterator();
+	  String parent11 = it11.next();
 	  //iterate through your windows
 	  while (it11.hasNext())
 	  {
-	  String parent11 = it11.next();
+	  //String parent11 = it11.next();
 	  String newwin11 = it11.next();
 	  driver.switchTo().window(newwin11);
 	  driver.manage().window().maximize();
@@ -281,7 +292,8 @@ public void selectDate(String date) {
 	  
 	  //Verify random ID element
 	  String expectedRandomIDElementText = "I will have random ID";
-	  WebElement randomIDElement = driver.findElement(By.xpath(".//*[@class='wpb_wrapper']/p[5]"));	  
+	  WebElement randomIDElement = driver.findElement(By.xpath(".//*[@class='wpb_wrapper']/p[5]"));	
+	  //WebElement randomIDElement = driver.findElement(By.id("0.*"));
 	  Assert.assertTrue(randomIDElement.getText().equals(expectedRandomIDElementText));
 	  }
 	  

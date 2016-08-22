@@ -1,391 +1,469 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="26" passed="24">
+<testng-results skipped="0" failed="0" total="42" passed="42">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="250454" started-at="2016-08-16T08:14:56Z" finished-at="2016-08-16T08:19:06Z">
+  <suite name="Default suite" duration-ms="960023" started-at="2016-08-22T11:18:00Z" finished-at="2016-08-22T11:34:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="250454" started-at="2016-08-16T08:14:56Z" finished-at="2016-08-16T08:19:06Z">
-      <class name="AutomateForm.FormAutomate">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="openBrowser" is-config="true" duration-ms="8833" started-at="2016-08-16T13:44:56Z" finished-at="2016-08-16T13:45:05Z">
+    <test name="Default test" duration-ms="960023" started-at="2016-08-22T11:18:00Z" finished-at="2016-08-22T11:34:00Z">
+      <class name="AutomateForm.ValidateAllLinks">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="openBrowser" is-config="true" duration-ms="37951" started-at="2016-08-22T16:48:00Z" finished-at="2016-08-22T16:48:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="10172" started-at="2016-08-16T13:45:05Z" finished-at="2016-08-16T13:45:15Z">
+        <test-method status="PASS" signature="allLinksInPage()[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="allLinksInPage" duration-ms="3204" started-at="2016-08-22T16:48:38Z" finished-at="2016-08-22T16:48:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="textArea()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="textArea" duration-ms="933" started-at="2016-08-16T13:45:15Z" finished-at="2016-08-16T13:45:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textArea -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6937" started-at="2016-08-16T13:45:16Z" finished-at="2016-08-16T13:45:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="textBox()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="textBox" duration-ms="475" started-at="2016-08-16T13:45:23Z" finished-at="2016-08-16T13:45:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textBox -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7181" started-at="2016-08-16T13:45:23Z" finished-at="2016-08-16T13:45:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="checkBox()[pri:1, instance:AutomateForm.FormAutomate@1fa1d9b]" name="checkBox" duration-ms="455" started-at="2016-08-16T13:45:30Z" finished-at="2016-08-16T13:45:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBox -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7177" started-at="2016-08-16T13:45:31Z" finished-at="2016-08-16T13:45:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="radioButton()[pri:2, instance:AutomateForm.FormAutomate@1fa1d9b]" name="radioButton" duration-ms="384" started-at="2016-08-16T13:45:38Z" finished-at="2016-08-16T13:45:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButton -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7106" started-at="2016-08-16T13:45:38Z" finished-at="2016-08-16T13:45:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="FAIL" signature="datePicker()[pri:3, instance:AutomateForm.FormAutomate@1fa1d9b]" name="datePicker" duration-ms="10788" started-at="2016-08-16T13:45:46Z" finished-at="2016-08-16T13:45:56Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.className: ui-datepicker-calendar
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7abbce11-c6cb-4246-a824-74364045ea3d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.className: ui-datepicker-calendar
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7abbce11-c6cb-4246-a824-74364045ea3d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at AutomateForm.FormAutomate.selectDate(FormAutomate.java:119)
-	at AutomateForm.FormAutomate.datePicker(FormAutomate.java:113)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"ui-datepicker-calendar"}
-Command duration or timeout: 40 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7abbce11-c6cb-4246-a824-74364045ea3d
-*** Element info: {Using=class name, value=ui-datepicker-calendar}
-	at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	... 26 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"class name","selector":"ui-datepicker-calendar"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'DESKTOP-ONH91QT', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_101'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous398767717749128372webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous398767717749128372webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous398767717749128372webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous398767717749128372webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/UBAIDU~1/AppData/Local/Temp/anonymous398767717749128372webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datePicker -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6625" started-at="2016-08-16T13:45:56Z" finished-at="2016-08-16T13:46:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="urlText()[pri:4, instance:AutomateForm.FormAutomate@1fa1d9b]" name="urlText" duration-ms="326" started-at="2016-08-16T13:46:03Z" finished-at="2016-08-16T13:46:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlText -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6994" started-at="2016-08-16T13:46:03Z" finished-at="2016-08-16T13:46:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="dropdownSelect()[pri:5, instance:AutomateForm.FormAutomate@1fa1d9b]" name="dropdownSelect" duration-ms="481" started-at="2016-08-16T13:46:10Z" finished-at="2016-08-16T13:46:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropdownSelect -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="9419" started-at="2016-08-16T13:46:11Z" finished-at="2016-08-16T13:46:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="967" started-at="2016-08-16T13:46:20Z" data-provider="getData" finished-at="2016-08-16T13:46:21Z">
+        </test-method> <!-- allLinksInPage -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="14" started-at="2016-08-22T16:48:41Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[200]]>
+                <![CDATA[mailto:support@seleniumframework.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6569" started-at="2016-08-16T13:46:21Z" finished-at="2016-08-16T13:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="959" started-at="2016-08-16T13:46:28Z" data-provider="getData" finished-at="2016-08-16T13:46:29Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="5018" started-at="2016-08-22T16:48:41Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tt]]>
+                <![CDATA[https://plus.google.com/111979135243110831526/posts]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7376" started-at="2016-08-16T13:46:29Z" finished-at="2016-08-16T13:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="871" started-at="2016-08-16T13:46:36Z" data-provider="getData" finished-at="2016-08-16T13:46:37Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="632" started-at="2016-08-22T16:48:46Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[text]]>
+                <![CDATA[https://www.youtube.com/channel/UCHl59sI3SRjQ-qPcTrgt0tA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6578" started-at="2016-08-16T13:46:37Z" finished-at="2016-08-16T13:46:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="995" started-at="2016-08-16T13:46:44Z" data-provider="getData" finished-at="2016-08-16T13:46:45Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="584" started-at="2016-08-22T16:48:47Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1+]]>
+                <![CDATA[http://github.com/machzqcq/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6391" started-at="2016-08-16T13:46:45Z" finished-at="2016-08-16T13:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="919" started-at="2016-08-16T13:46:51Z" data-provider="getData" finished-at="2016-08-16T13:46:52Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1522" started-at="2016-08-22T16:48:47Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[0]]>
+                <![CDATA[https://www.facebook.com/groups/525066904174158/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6661" started-at="2016-08-16T13:46:52Z" finished-at="2016-08-16T13:46:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitError(java.lang.String)[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitError" duration-ms="1035" started-at="2016-08-16T13:46:58Z" data-provider="getData" finished-at="2016-08-16T13:47:00Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="2429" started-at="2016-08-22T16:48:49Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
+                <![CDATA[http://seleniumframework.com/feed]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitError -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6891" started-at="2016-08-16T13:47:00Z" finished-at="2016-08-16T13:47:06Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="536" started-at="2016-08-22T16:48:51Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verificationTextAndSubmitSuccess()[pri:6, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verificationTextAndSubmitSuccess" duration-ms="7455" started-at="2016-08-16T13:47:06Z" finished-at="2016-08-16T13:47:14Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="547" started-at="2016-08-22T16:48:52Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/basic-tutorial/setup-ruby-and-components/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verificationTextAndSubmitSuccess -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="10878" started-at="2016-08-16T13:47:14Z" finished-at="2016-08-16T13:47:25Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1053" started-at="2016-08-22T16:48:52Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/decision-models]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="nestedAndRandomIDElements()[pri:8, instance:AutomateForm.FormAutomate@1fa1d9b]" name="nestedAndRandomIDElements" duration-ms="178" started-at="2016-08-16T13:47:25Z" finished-at="2016-08-16T13:47:25Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="541" started-at="2016-08-22T16:48:54Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/introduction/what-is-ruby/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nestedAndRandomIDElements -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6540" started-at="2016-08-16T13:47:25Z" finished-at="2016-08-16T13:47:31Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1069" started-at="2016-08-22T16:48:54Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/intermediate-tutorial/test-data]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="alertJava()[pri:9, instance:AutomateForm.FormAutomate@1fa1d9b]" name="alertJava" duration-ms="382" started-at="2016-08-16T13:47:31Z" finished-at="2016-08-16T13:47:32Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="543" started-at="2016-08-22T16:48:55Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/advanced-tutorial/headless-testing/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertJava -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6517" started-at="2016-08-16T13:47:32Z" finished-at="2016-08-16T13:47:38Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="535" started-at="2016-08-22T16:48:56Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/frameworks/what-are-frameworks/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="timingAlertJava()[pri:10, instance:AutomateForm.FormAutomate@1fa1d9b]" name="timingAlertJava" duration-ms="364" started-at="2016-08-16T13:47:38Z" finished-at="2016-08-16T13:47:39Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1073" started-at="2016-08-22T16:48:56Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-jvm-2/cucumber-jvm-and-selenium/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- timingAlertJava -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6679" started-at="2016-08-16T13:47:39Z" finished-at="2016-08-16T13:47:45Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="534" started-at="2016-08-22T16:48:57Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-jvm-3/parameterize-browser/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="FAIL" signature="clockTimer()[pri:11, instance:AutomateForm.FormAutomate@1fa1d9b]" name="clockTimer" duration-ms="114" started-at="2016-08-16T13:47:45Z" finished-at="2016-08-16T13:47:46Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at AutomateForm.FormAutomate.clockTimer(FormAutomate.java:322)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="532" started-at="2016-08-22T16:48:58Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-jvm-3/what-are-frameworks/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clockTimer -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6406" started-at="2016-08-16T13:47:46Z" finished-at="2016-08-16T13:47:52Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="530" started-at="2016-08-22T16:48:58Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/python-basic/what-is-python/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="changeColorButton()[pri:12, instance:AutomateForm.FormAutomate@1fa1d9b]" name="changeColorButton" duration-ms="3425" started-at="2016-08-16T13:47:52Z" finished-at="2016-08-16T13:47:55Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="531" started-at="2016-08-22T16:48:59Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/python-intermediate/test-data/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeColorButton -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7104" started-at="2016-08-16T13:47:55Z" finished-at="2016-08-16T13:48:02Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="530" started-at="2016-08-22T16:48:59Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/python-frameworks/what-are-frameworks/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="changeColorButtonOnDoubleClick()[pri:12, instance:AutomateForm.FormAutomate@1fa1d9b]" name="changeColorButtonOnDoubleClick" duration-ms="362" started-at="2016-08-16T13:48:02Z" finished-at="2016-08-16T13:48:03Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="524" started-at="2016-08-22T16:49:00Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/setup-visual-studio/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changeColorButtonOnDoubleClick -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6145" started-at="2016-08-16T13:48:03Z" finished-at="2016-08-16T13:48:09Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1398" started-at="2016-08-22T16:49:01Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/videos/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="dragAndDrop()[pri:13, instance:AutomateForm.FormAutomate@1fa1d9b]" name="dragAndDrop" duration-ms="687" started-at="2016-08-16T13:48:09Z" finished-at="2016-08-16T13:48:10Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="535" started-at="2016-08-22T16:49:02Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/practice-videos/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAndDrop -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6417" started-at="2016-08-16T13:48:10Z" finished-at="2016-08-16T13:48:16Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="522" started-at="2016-08-22T16:49:02Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/demo-sites/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="periodicElements()[pri:14, instance:AutomateForm.FormAutomate@1fa1d9b]" name="periodicElements" duration-ms="3394" started-at="2016-08-16T13:48:16Z" finished-at="2016-08-16T13:48:19Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="536" started-at="2016-08-22T16:49:03Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/code-bases/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- periodicElements -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="7848" started-at="2016-08-16T13:48:19Z" finished-at="2016-08-16T13:48:27Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="937" started-at="2016-08-22T16:49:04Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/introduction/what-is-selenium/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="verifyTitle()[pri:15, instance:AutomateForm.FormAutomate@1fa1d9b]" name="verifyTitle" duration-ms="103" started-at="2016-08-16T13:48:27Z" finished-at="2016-08-16T13:48:27Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1077" started-at="2016-08-22T16:49:04Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-jvm-2/selenium-java/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6364" started-at="2016-08-16T13:48:27Z" finished-at="2016-08-16T13:48:34Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="539" started-at="2016-08-22T16:49:06Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/introduction/what-is-cucumber/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="newBrowserTab()[pri:17, instance:AutomateForm.FormAutomate@1fa1d9b]" name="newBrowserTab" duration-ms="9198" started-at="2016-08-16T13:48:34Z" finished-at="2016-08-16T13:48:43Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="540" started-at="2016-08-22T16:49:06Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-2/make-a-case/why-cucumber/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newBrowserTab -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6455" started-at="2016-08-16T13:48:43Z" finished-at="2016-08-16T13:48:49Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="542" started-at="2016-08-22T16:49:07Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/cucumber-jvm-3/cucumber-jvm-and-selenium/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="newBrowserWindow()[pri:17, instance:AutomateForm.FormAutomate@1fa1d9b]" name="newBrowserWindow" duration-ms="8839" started-at="2016-08-16T13:48:49Z" finished-at="2016-08-16T13:48:58Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="532" started-at="2016-08-22T16:49:07Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/forums/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newBrowserWindow -->
-        <test-method status="PASS" signature="goToUrl()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="goToUrl" is-config="true" duration-ms="6497" started-at="2016-08-16T13:48:58Z" finished-at="2016-08-16T13:49:05Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="533" started-at="2016-08-22T16:49:08Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/about-2/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToUrl -->
-        <test-method status="PASS" signature="newMessageWindow()[pri:17, instance:AutomateForm.FormAutomate@1fa1d9b]" name="newMessageWindow" duration-ms="716" started-at="2016-08-16T13:49:05Z" finished-at="2016-08-16T13:49:06Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="536" started-at="2016-08-22T16:49:08Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/contact-2/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newMessageWindow -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutomateForm.FormAutomate@1fa1d9b]" name="closeBrowser" is-config="true" duration-ms="821" started-at="2016-08-16T13:49:06Z" finished-at="2016-08-16T13:49:06Z">
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="533" started-at="2016-08-22T16:49:09Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/Practiceform/#show-menu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="532" started-at="2016-08-22T16:49:09Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/Practiceform/#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="535" started-at="2016-08-22T16:49:10Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/Practiceform/#go]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="1077" started-at="2016-08-22T16:49:10Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://seleniumframework.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="537" started-at="2016-08-22T16:49:11Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/add-extensions/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="538" started-at="2016-08-22T16:49:12Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/setup-first-project/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="536" started-at="2016-08-22T16:49:13Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/browser-commands/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="validateLinks(java.lang.String)[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="validateLinks" duration-ms="729" started-at="2016-08-22T16:49:13Z" data-provider="getLinkData" depends-on-methods="AutomateForm.ValidateAllLinks.allLinksInPage" finished-at="2016-08-22T16:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.seleniumframework.com/find-element-strategies/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLinks -->
+        <test-method status="PASS" signature="linksInPage()[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="linksInPage" duration-ms="886185" started-at="2016-08-22T16:49:14Z" depends-on-methods="AutomateForm.ValidateAllLinks.validateLinks" finished-at="2016-08-22T17:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linksInPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutomateForm.ValidateAllLinks@70fda8]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2016-08-22T17:04:00Z" finished-at="2016-08-22T17:04:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- AutomateForm.FormAutomate -->
+      </class> <!-- AutomateForm.ValidateAllLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,29 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Suite]">
   <test name="Regression">
     <classes>
-      <class name="AutomateForm.FormAutomate"/>
-      <class name="AutomateForm.ValidteLinks"/>
+      <class name="AutomateForm.ValidateAllLinks"/>
     </classes>
   </test> <!-- Regression -->
-  <test name="Regression(failed)">
-    <classes>
-      <class name="AutomateForm.ValidteLinks">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- AutomateForm.ValidteLinks -->
-      <class name="AutomateForm.FormAutomate">
-        <methods>
-          <include name="verificationTextAndSubmitError" invocation-numbers="0 1 2 3 4"/>
-          <include name="openBrowser"/>
-          <include name="verificationTextAndSubmitSuccess"/>
-          <include name="datePicker"/>
-          <include name="newMessageWindow"/>
-          <include name="goToUrl"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- AutomateForm.FormAutomate -->
-    </classes>
-  </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->
